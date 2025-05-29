@@ -1,0 +1,22 @@
+.index-bar-item-active {
+  background-color: blue;
+  color: white;
+}
+
+.sidebar-row {
+  height: 25px;
+  width: 25px;
+  line-height: 25px;
+  text-align: center;
+}
+.sidebar-container {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 910;
+  overflow: visible;
+  user-select: none;
+  touch-action: none;
+  z-index: 100;
+}
