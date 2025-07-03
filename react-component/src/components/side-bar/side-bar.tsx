@@ -22,6 +22,7 @@ export const Sidebar: FC<SidebarProps> = (props) => {
           containerRef.current?.offsetLeft || 0,
           clientY
         ) as HTMLElement;
+        console.log(target);
         if (!target) {
           return;
         }

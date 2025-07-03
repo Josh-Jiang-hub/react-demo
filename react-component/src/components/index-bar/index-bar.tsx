@@ -81,7 +81,7 @@ export default function IndexBar() {
         overflow: 'hidden',
       }}
     >
-      <div
+      {/* <div
         onScroll={checkActiveIndex}
         ref={bodyRef}
         style={{
@@ -108,7 +108,7 @@ export default function IndexBar() {
             <div />
           </div>
         ))}
-      </div>
+      </div> */}
       <Sidebar
         activeIndex={activeIndex}
         indexItems={data}

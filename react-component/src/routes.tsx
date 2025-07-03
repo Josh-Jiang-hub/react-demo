@@ -22,6 +22,38 @@ export const routes: (RouteObject & { title: string })[] = [
       return { Component };
     },
   },
+  {
+    title: 'TestModal',
+    path: '/ebay-modal',
+    lazy: async () => {
+      const { default: Component } = await import('./pages/EbayModal');
+      return { Component };
+    },
+  },
+  {
+    title: 'TestImage',
+    path: '/test-image',
+    lazy: async () => {
+      const { default: Component } = await import('./pages/TestImage');
+      return { Component };
+    },
+  },
+  {
+    title: 'Utils',
+    path: '/utils-demo',
+    lazy: async () => {
+      const { default: Component } = await import('./pages/UtilsDemo');
+      return { Component };
+    },
+  },
+  {
+    title: 'Utils',
+    path: '/test-form',
+    lazy: async () => {
+      const { default: Component } = await import('./pages/UtilsDemo');
+      return { Component };
+    },
+  },
 ];
 
 export const RouterComponent = createBrowserRouter(routes);
